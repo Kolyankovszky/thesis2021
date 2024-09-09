@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<title>Szivattyú alkatrészek</title>
+</head>
+<body>
+	<header>
+		<div style="text-align: left">SZIVATTYÚ ALKATRÉSZEK</div>
+	</header>
+	<!--navigáció modul-->
+	<ul>
+	  <li><a class="active" href="#home">Ajánlat</a></li>
+	  <li><a href="#news">Hírek</a></li>
+	  <li><a href="#contact">Kapcsolat</a></li>
+	  <li><a href="#about">Egyéb</a></li>
+	  <!--<li style="float:right"><a class="active" href="#belepes">Belépés	</a></li>-->
+	</ul>
+	<div style="padding:10px;margin-top:100px;background-color:antracit;height:700px;">
+		<!--regisztráció modul-->
+		<div class="container">
+		  <form action="logreg.php" method="post">
+				<h3>Ügyfél regisztráció</h3>
+				<div class="row">
+					<div class="col-25">
+						<label for="cegnev">Cég név</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="cegnev" placeholder="például: AxFlow Kft">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="kapcsolatnev">Kapcsolattartó neve</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="kapcsolatnev" placeholder="például: Kolyankovszky Gusztáv">
+					</div>
+				</div>
+				 <div class="row">
+					<div class="col-25">
+						<label for="email">Kapcsolattartó e-mail</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="email" placeholder="például: gusztav.kolyankovszky@axflow.hu">
+					</div>
+				 </div>
+				 <div class="row">
+					<div class="col-25">
+						<label for="password">Jelszó</label>
+					</div>
+					<div class="col-75">
+						<input type="password" name="password">
+					</div>
+				 </div>
+				 <div class="row">
+					<div class="col-25">
+						<label for="password">Jelszó megerősítése</label>
+					</div>
+					<div class="col-75">
+						<input type="password" name="confirmpassword">
+					</div>
+				 </div>
+				 <div class="row">
+					<input type="submit" name="submit">
+				 </div>
+			</form>
+		</div>
+		<h3></h3>
+		<!--belépés modul-->
+		<div class="container">
+			<form action="login.php" method="post">
+				<h3>BELÉPÉS</h3>
+				<div class="row">
+					<div class="col-25">
+						<label for="email">e-mail</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="email" placeholder="például: kukac@kukac.com">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="password">Jelszó</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="password" placeholder="Jelszó">
+					</div>
+				</div>
+				 <div class="row">
+					<input type="submit" name="submit">
+				 </div>
+			</form>
+		</div>		
+	</div>
+	<footer>
+		Nincs belépve!
+	</footer>
+</body>
+</html>
